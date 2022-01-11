@@ -1,5 +1,5 @@
 /* Google fonts  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100;1,300;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200;1,300;1,500;1,600;1,800&display=swap');
 /* Start Global Rules */
 :root {
 	--main-color: #10cab7;
@@ -11,7 +11,7 @@
 }
 /* End Global Rules */
 body {
-	font-family: "Roboto Mono", monospace;
+	font-family: "Work Sans", monospace;
 }
 .container {
 	margin-left: auto;
@@ -53,28 +53,28 @@ body {
 }
 .header .logo {
 	width: 60px;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
 }
 
 .header .icon {
 	position: relative;
 	order: 3;
-}
-.header .icon:hover span:nth-child(2) {
-	width: 100%;
+	z-index: 1;
 }
 .header .icon {
 	position: absolute;
 	right: 20%;
-	top: 2%;
+	top: 1.5%;
 	display: flex;
 	width: 30px;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 }
 .header .icon span {
-	background-color: #222;
+	background-color: #151515;
 	margin-bottom: 3px;
-	height: 2px;
+	height: 1px;
 }
 .header .icon span:first-child {
 	width: 100%;
@@ -123,6 +123,9 @@ body {
 .header .container .link:hover ul {
 	display: block;
 }
+.header .container .link:hover > .icon > span:nth-child(2) {
+	width: 100%;
+}
 /* End Header */
 /* Start Landing section */
 .Landing {
@@ -152,3 +155,21 @@ body {
 	max-width: 100%;
 }
 /* End Landing section */
+/* Start Feature Section  */
+.features .container{
+	display: grid;
+	width: 100vw;
+	grid-template-columns: repeat(9, 1fr);
+	grid-area: "magic magic magic gem gem gem asia asia asia";
+	gap: 20px 20px;
+}
+.features .container .magic {
+	grid-area: magic;
+}
+.features .container .gem{
+	grid-area: gem;
+}
+.features .container .asia{
+	grid-area: asia;
+}
+/* End Feature Section  */
