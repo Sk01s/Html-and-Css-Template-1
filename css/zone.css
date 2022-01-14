@@ -452,4 +452,8 @@ body {
 	color: var(--main-color);
 	font-weight: 800;
 }
+@media (max-width:767px) {
+	.Contact .Contact-content{
+		font-size: 30px;
+}
 /* End footer */
