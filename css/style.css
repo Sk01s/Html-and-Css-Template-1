@@ -162,7 +162,7 @@ body {
 .header .link ul a:hover {
 	padding-left: 25px;
 }
-.header .container .link:hover ul {
+.header .container .link.active ul {
 	display: block;
 	border-radius: 20px 10px 20px 20px;
 }
